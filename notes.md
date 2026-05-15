@@ -42,3 +42,38 @@ git status
 - Write -> Add -> Commit.  
 
 ![reference](/assets/working.png)
+
+## Adding Files and Folders to Staging Area  
+- Staging area is the area where files and folders are being tracked by a version control system like Git.
+- Following command can be ran to add files and folders to staging area :  
+```bash
+# Add file1 and file2 to staging area 
+git add file1.md file2.txt
+# Add folder to staging area 
+git add folder/
+# Add all files and folders to staging area 
+git add .
+```
+
+## Making a Commit  
+- Following command can be ran to make a commit after adding the respective file or folder to staging area.
+```bash
+git commit -m "commit message"
+```
+
+## Rules for Making a Commit [Atomic Commits] 
+- Keep commits centric to one feature, one component or one bug fix.  
+- Present or Past commit message.  
+- For present tense, it should be an imperative sentence. 
+
+## Log 
+- Used to print the log of commits in different ways.  
+```bash
+# Prints complete log of commits with commit hash, message, name of author and other details
+git log
+# Prints log of commits with commit hash and message in single line
+git log --oneline
+# Prints log of commits from a particular author
+git log --author "Author Name"
+```
+
