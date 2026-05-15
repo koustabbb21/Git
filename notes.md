@@ -22,7 +22,14 @@ git init
 ```
 - This command is used to initialize an empty git repository.
 - This command is ran only one time per project.
-- This command creates a **.git** folder, which is a hidden folder that tracks files and folders for changes.
+- This command creates a **.git** folder, which is a hidden folder that keeps history of all files and folders.
+
+## Cheking Git Version  
+```bash
+git --version
+git -v
+```
+- This two commands are used to check the git version.
 
 ## Checking Git Status  
 ```bash
