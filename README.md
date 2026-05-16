@@ -66,6 +66,9 @@ git commit -m "commit message"
 - Present or Past commit message.  
 - For present tense, it should be an imperative sentence. 
 
+## Behind the Scenes of Commits  
+![reference](/assets/commitsbts.png)  
+
 ## Log 
 - Used to print the log of commits in different ways.  
 ```bash
@@ -77,3 +80,52 @@ git log --oneline
 git log --author "Author Name"
 ```
 
+## Setting Username, Email and Default Editor for Git (Globally)  
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "Your Email"
+git config --global core.editor "code --wait"
+```
+- Above commands can be used to set the username, email and default editor for git globally.
+
+## Checking Username, Email and Default Editor for Git (Globally)  
+```bash
+git config --global user.name
+git config --global user.email
+git config --global core.editor
+```
+- Above commands can be used to check the username, email and default editor for git globally.
+
+## Setting Username, Email and Default Editor for Git (Locally)  
+```bash
+git config user.name "Your Name"
+git config user.email "Your Email"
+git config core.editor "code --wait"
+```
+- Above commands can be used to set the username, email and default editor for git locally.
+
+## Checking Username, Email and Default Editor for Git (Locally)  
+```bash
+git config user.name
+git config user.email
+git config core.editor
+```
+- Above commands can be used to check the username, email and default editor for git locally.
+
+## .gitignore File  
+- **.gitignore** file is used to keep some important files free from being tracked by Git such as .env, modules, secrets etc.
+- We can just search .gitignore file generator in google, and copy-paste the result in our respective file.
+- Alternative, we can specify files and folders in **.gitignore** file as given below :  
+```bash
+.env
+secrets/
+modules/
+```
+
+## .gitconfig File  
+- **.gitconfig** file contains all the personal git data such as username, email-id, sign-in keys, default editor details etc.
+- To view the contents of .gitconfig file, we must be in the home directory.
+```bash
+cd ~
+cat .gitconfig
+```
