@@ -129,3 +129,53 @@ modules/
 cd ~
 cat .gitconfig
 ```
+
+## Branch  
+- A branch is like an alternate timeline or a parallel universe where we can work on new ideas without affecting the main ones.
+- To check current branch, run the following command :  
+```bash
+git branch
+```
+- Here * denotes the current branch.
+
+## Creating a New Branch  
+- Run the following command to create a new branch :  
+```bash
+git branch branchName
+```
+
+## Switching to another Branch  
+- Run the following command to switch to another branch :  
+```bash
+git switch branchName
+```
+
+## Creating a New Branch and Switch to that Branch  
+- Run the following commands to create a new branch and switch to that branch :  
+```bash
+git switch -c branchName
+git checkout -b branchName
+```  
+
+## Deleting a Branch  
+- Run the following command to delete a branch :  
+```bash
+git branch -d branchName
+```
+
+## Renaming a Branch   
+- Run the following command to rename a branch :  
+```bash
+git branch -m newName
+git branch -m oldName newName
+```
+
+## Merging a Branch  
+- To merge a branch, we must be in the branch where we want the desired branch to merge at :  
+```bash
+git merge branchName -m "merge message"
+```
+
+## Merge Conflicts  
+- Arises during merging when changes are made to the same code in different branches.
+- In case of merge conflicts, remove the markers, keep whatever you want, and then save the file.  
