@@ -179,3 +179,58 @@ git merge branchName -m "merge message"
 ## Merge Conflicts  
 - Arises during merging when changes are made to the same code in different branches.
 - In case of merge conflicts, remove the markers, keep whatever you want, and then save the file.  
+
+## Diff Command  
+- **git diff** command is used to show the differences between various states of your project.
+```bash
+# Shows the difference between last staged and current working directory
+git diff
+# Shows the difference between last commited and current staged file
+git diff --cached
+git diff --staged
+# Shows the difference between branch1 and branch2
+git diff branch1..branch
+git diff branch1 branch2
+# Shows the difference between commit hash1 and commit hash2
+git diff commit_hash1..commit_hash2
+git diff commit_hash1 commit_hash2
+```
+
+## How to Read the Output of Diff Command  
+- a denotes the older version  
+- b denotes the newer version  
+- +++ denotes addition of lines  
+- --- denotes deletion of lines  
+
+## Stash Command  
+- Used when we quickly want to switch to another branch without adding the current working branch.
+- Its like a temporary shelf where we can store the file and retrieve it later.
+```bash
+# Add to stash
+git stash
+# Apply changes and remove from stash
+git stash pop
+# Apply changes and also keep them in stash
+git stash apply
+# Shows stash list
+git stash list
+# Apply a specific stashed file
+git stash apply stash@{0}
+```
+
+## Switching to a Specific Commit
+```bash
+git checkout commit_hash
+# Move to atleast two commits prior
+git checkout HEAD~2
+```
+
+## Revert back to Main Branch
+```bash
+git switch main
+```
+
+## Revert back to Last Commit  
+```bash
+git restore filename
+```  
