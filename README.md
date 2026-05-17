@@ -234,3 +234,93 @@ git switch main
 ```bash
 git restore filename
 ```  
+
+## Rebase  
+- Rebase is an alternative to merge.
+- Rebase is a cleanup tool, that cleanup commits.  
+
+![reference image](/assets/rebase.png)  
+
+- **Note :**   
+    1. Never run rebase command from the main branch.
+    2. Never rebase code that you've shared or pushed to github.
+
+## GitHub  
+- GitHub is a service.
+- GitHub is a backup + open-source + collaboration tool.  
+- GitLab, BitBucket are some similar services to GitHub.
+
+![reference image](/assets/ssh.png)
+
+## Cloning a Repository  
+```bash
+git clone <url>
+```
+
+## Adding a Remote Repository
+```bash
+git remote add name branch
+git remote add origin main
+```
+
+## Checking Remote Repository Info  
+```bash
+git remote -v
+```
+
+## Renaming a Remote Repository  
+```bash
+git remote rename oldName newName
+```
+
+## Removing a Remote Repository  
+```bash
+git remote remove name
+```
+
+## Pushing to GitHub  
+- **git push** command is used to push to github.
+```bash
+git push name branch
+git push origin main
+# Sets up an upstream branch that allows us to run future commands
+git push -u origin main
+```
+
+## Fetching from GitHub
+- **git fetch** command is used to fetch from github.
+- This command pulls the changes from the remote repository to the local repository, though, the changes are not automatically applied to the local repository.
+```bash
+git fetch name branch
+git fetch origin main
+```
+
+## Pulling from GitHub
+- **git pull** command is used to pull from github.
+- This command pulls the changes from the remote repository to the local repository, here, the changes are automatically applied to the local repository.
+```bash
+git pull name branch
+git pull origin main
+```
+
+## Miscellaneous  
+
+### Steps to Contribute to Open-Source  
+1. Talk to the founders, developers, or maintainers of the project.
+2. Open an issue.  
+3. Get the issue assigned.
+4. Now work and add value to the project.
+5. Make PR and iterate over it.
+
+**NOTE:**  
+1. Making PR is not a job gurantee.
+2. Have Patience.  
+
+### Steps to Make a Pull Request(PR)  
+1. Fork the repository.
+2. Create a new branch.
+3. Work on that branch.
+4. Push to GitHub.
+5. Make PR.
+
+**NOTE:** Take sufficient amount of time to write the title and description of the pull request, so that the maintainers easily understand your work by just reading the title/description. 
